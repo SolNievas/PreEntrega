@@ -1,0 +1,41 @@
+
+/*Columnas y Tarjetas de Productos*/
+
+.fila {
+    @extend %fila;
+}
+
+.contenedor .card {
+    @extend %card;
+    
+    &:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 16px rgba(0,0,0,0.2);
+    }
+
+    > img {
+        @include img(200px, 200px);
+    }
+
+    > h4 {
+        font-weight: 600;
+    }
+
+    > p {
+        padding: 0 1rem;
+        font-size: 16px;
+        font-weight: 300;
+    }
+        
+    > a {
+        font-weight: 200;
+        text-decoration: none;
+        color: white;
+        margin-top: 20px;
+        border: 3px solid white;
+        border-radius: 50px;
+        background: black;
+        display: inline-block;
+        padding: 3px;
+    }
+}

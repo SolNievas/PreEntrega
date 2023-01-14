@@ -1,0 +1,56 @@
+
+/*Footer*/
+
+.descripcion {
+    display: flex;
+    justify-content: space-evenly;
+    margin:30px auto;
+    font-size: 17px;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+
+    > p {
+        margin:10px auto;
+    }
+}
+
+.social {
+    background-color:#c4b7b74d;
+    padding: 15px 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > a {
+        color: black;
+        text-decoration: none;
+        display: flex; 
+    }  
+}
+
+.box .grupo-2 {
+    background-color:#c4b7b74d;
+    padding: 15px 10px;
+    text-align: center;
+    color: black
+}
+
+.box .grupo-2 small{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+    

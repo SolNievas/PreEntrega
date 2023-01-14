@@ -1,0 +1,33 @@
+
+/*Menu*/
+
+#menu-bar {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $ColorSecundario;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+    > a {
+        display: block;
+        color: black;
+        height: 50px;
+        text-decoration: none;
+        padding: 15px;
+        border-bottom: 1px solid $ColorPrincipal;
+
+        &:hover {
+            background: $ColorPrincipal;
+        }
+    }  
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}

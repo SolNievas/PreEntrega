@@ -1,0 +1,40 @@
+
+/*Info*/
+
+.imginfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.img2 {
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.info {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+
+    > .h4 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+
+    > .p {
+        font-family: $Fuente2;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        margin: 50px;
+    }
+}    

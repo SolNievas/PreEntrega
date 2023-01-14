@@ -1,0 +1,51 @@
+
+/*Sección de Nosotros*/
+
+.main--titile {
+    text-align: center;
+    margin: 15px;
+    font-size: 1.4em;
+    font-weight: 100;
+}
+
+.main--txt {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.group--titile {
+    text-align: center;
+    margin: 50px;    
+}
+
+.column--title .productos--title {
+    font-size: 1.3em;
+
+}
+
+.productos--txt {
+    font-family: $Fuente2;
+}
+
+.productos--img {
+    width: 100px;
+    height: 220px;
+}
+
+.column--33 {
+    @extend %columna;
+
+    > p {
+        margin-bottom: 10px;
+    }
+    
+    > h4 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+    
+    > img {
+        @include img(200px, 200px);
+    }
+}

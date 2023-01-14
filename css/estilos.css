@@ -1,0 +1,397 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+/*Incio*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contenedor .card {
+  width: 200px;
+  height: 320px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  flex-direction: column;
+}
+
+.column--33 {
+  flex: 1 1 5rem;
+  margin: 10px 20px;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  padding: 10px 40px;
+  align-self: normal;
+  align-items: center;
+}
+
+/*Info*/
+.imginfo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img2 {
+  border-radius: 10px;
+  width: 600px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.info {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.info > .h4 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+.info > .p {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  margin: 50px;
+}
+
+/*Header*/
+header {
+  width: 100%;
+  height: 50px;
+  background: #F4EAE7;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+header label {
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+header > .contenedor {
+  display: table;
+}
+
+.contenedor {
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  float: left;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/*Menu*/
+#menu-bar {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #F4EAE7;
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+.menu > a {
+  display: block;
+  color: black;
+  height: 50px;
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.menu > a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#menu-bar:checked ~ .menu {
+  transform: translateX(0%);
+}
+
+/*Banner*/
+#banner {
+  margin-top: 50px;
+  position: relative;
+}
+#banner > img {
+  width: 100%;
+  height: 100%;
+}
+#banner > .contenedor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: black;
+}
+#banner > h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+#texto h2, h3, h4 {
+  text-align: center;
+}
+
+/*Columnas y Tarjetas de Productos*/
+.contenedor .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 16px rgba(0, 0, 0, 0.2);
+}
+.contenedor .card > img {
+  width: 200px;
+  height: 200px;
+}
+.contenedor .card > h4 {
+  font-weight: 600;
+}
+.contenedor .card > p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+.contenedor .card > a {
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  border: 3px solid white;
+  border-radius: 50px;
+  background: black;
+  display: inline-block;
+  padding: 3px;
+}
+
+/*Footer*/
+.descripcion {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+  font-size: 17px;
+}
+
+footer .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+footer .contenedor > p {
+  margin: 10px auto;
+}
+
+.social {
+  background-color: rgba(196, 183, 183, 0.3019607843);
+  padding: 15px 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social > a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+}
+
+.box .grupo-2 {
+  background-color: rgba(196, 183, 183, 0.3019607843);
+  padding: 15px 10px;
+  text-align: center;
+  color: black;
+}
+
+.box .grupo-2 small {
+  font-size: 15px;
+}
+
+/*Sección de Nosotros*/
+.main--titile {
+  text-align: center;
+  margin: 15px;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+.main--txt {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.group--titile {
+  text-align: center;
+  margin: 50px;
+}
+
+.column--title .productos--title {
+  font-size: 1.3em;
+}
+
+.productos--txt {
+  font-family: "Quicksand", sans-serif;
+}
+
+.productos--img {
+  width: 100px;
+  height: 220px;
+}
+
+.column--33 > p {
+  margin-bottom: 10px;
+}
+.column--33 > h4 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.column--33 > img {
+  width: 200px;
+  height: 200px;
+}
+
+/*Sección de Contacto*/
+.contact-wrapper {
+  width: 450px;
+  max-width: 500px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+}
+#boton:hover {
+  cursor: pointer;
+}
+
+/*Sección Responsive*/
+@media (min-width: 1024px) {
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: translateX(0%);
+    float: right;
+    display: flex;
+  }
+  .menu a {
+    border: none;
+  }
+  .contenedor {
+    width: 1000px;
+  }
+  .card {
+    width: auto;
+  }
+  header label {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .social {
+    width: auto;
+  }
+  footer .contenedor {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 415px) {
+  .info p {
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+  }
+}
+@media (min-width: 480px) {
+  .card {
+    width: 30%;
+  }
+  .img2 {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+}

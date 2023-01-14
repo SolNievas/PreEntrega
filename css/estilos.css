@@ -312,11 +312,13 @@ footer .contenedor > p {
   box-sizing: border-box;
   margin-top: 20px;
   border-radius: 7px;
+  overflow: hidden;
 }
 
 .contact-form form {
   display: grid;
   grid-template-columns: 1fr;
+  overflow-x: hidden;
 }
 
 input, textarea {
